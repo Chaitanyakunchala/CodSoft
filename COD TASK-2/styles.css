@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #130b0a, #000000);
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: color 0.4s ease;
+}
+
+nav ul li a:hover {
+    color: #ffa500; /* Change to different color on hover */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.profile-pic {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+h1 {
+    font-size: 75px;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 2px 2px 8px #000;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px #000;
+}
+
+h4 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+}
+
+/* Add keyframes for the fade in and out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Apply the animation to the animated content */
+.animate-content {
+    animation: fadeInOut 4s ease-in-out infinite;
+}
+
+/* About section */
+.about {
+    padding: 100px 8%;
+    background-color: #191919;
+    color: white;
+}
+
+.about .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.about-text h2 {
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+/* Skills section */
+.service {
+    padding: 100px 8%;
+    background-color: #222;
+    color: white;
+}
+
+.service .title h2 {
+    font-size: 75px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .card {
+    background: #333;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    transition: background 0.4s ease;
+    height: 400px; /* Adjust the height of the skill boxes */
+}
+
+.service .card:hover {
+    background: #444;
+}
+
+.service .card i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.service .card h5 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.service .card .pra p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.service .card .button {
+    color: white;
+    background: #ffa500; /* Change button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.4s ease;
+}
+
+.service .card .button:hover {
+    background: #ff7700; /* Change button hover color */
+}
+
+/* Resume section */
+.contact-me {
+    padding: 100px 8%;
+    background: linear-gradient(to right, #130b0a, #000000);
+    color: rgb(214, 8, 8);
+    text-align: center;
+}
+
+.contact-me p {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-me .button-two {
+    color: white;
+    background: #ffa500; /* Change button color */
+    padding: 30px 20px;
+    border-radius: 5px;
+    transition: background 0.4s ease;
+    font-size: 25px;
+}
+
+.contact-me .button-two:hover {
+    background: #ff7700; /* Change button hover color */
+}
+
+/* Footer section */
+footer {
+    padding: 50px 8%;
+    background-color: #191919;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 50px;
+}
+
+footer .social a {
+    color: rgb(39, 211, 16);
+    margin: 0 10px;
+    transition: color 0.4s ease;
+    
+}
+
+footer .social a:hover {
+    color: #e0260e; /* Change social icon color */
+}
+
+footer .end {
+    margin-top: 50px;
+    font-size: 25px;
+}
